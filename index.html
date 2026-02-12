@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>AimLock V1 - Thành Nam Sp</title>
+  <style>
+    body {
+      background-color: #111;
+      font-family: Arial, sans-serif;
+      color: #fff;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    #login {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100vh;
+      align-items: center;
+    }
+
+    #menu {
+      display: none;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #ffcc00;
+      margin-top: 20px;
+    }
+
+    input[type="password"] {
+      padding: 10px;
+      border-radius: 8px;
+      border: none;
+      width: 200px;
+      margin-top: 10px;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .btn {
+      display: block;
+      width: 250px;
+      margin: 10px auto;
+      padding: 12px;
+      background-color: #222;
+      border: 2px solid #ffcc00;
+      border-radius: 12px;
+      color: #ffcc00;
+      font-size: 17px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #ffcc00;
+      color: #111;
+    }
+
+    .footer {
+      margin-top: 30px;
+      font-size: 14px;
+      color: #888;
+    }
+
+    .apply-btn {
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+
+    .error {
+      color: red;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div id="login">
+  <h1>🔐 Nhập mật khẩu để truy cập</h1>
+  <input type="password" id="password" placeholder="Nhập mật khẩu...">
+  <button class="btn" onclick="checkPassword()">Đăng nhập</button>
+  <div class="error" id="error"></div>
+</div>
+
+<div id="menu">
+  <h1>AimLock V1 - Thành Nam Sp</h1>
+  <p>Tool hỗ trợ Free Fire Android</p>
+
+  <!-- Danh sách chức năng -->
+  <button class="btn">🔥 AimLock</button>
+  <button class="btn">🎯 Kéo Tâm Nhẹ</button>
+  <button class="btn">🔧 Fix Lố</button>
+  <button class="btn">📦 Giảm Rung</button>
+  <button class="btn">🛡️ Fix Giật</button>
+  <button class="btn">🎯 Bám Đầu</button>
+  <button class="btn">🧠 Dpi 2000</button>
+  <button class="btn apply-btn">✅ Áp Dụng Ngay</button>
+
+  <button class="btn">🎯 Nhẹ Tâm</button>
+  <button class="btn">⚡ Siêu Nhẹ FPS</button>
+  <button class="btn">🌀 Không Giật Lag</button>
+  <button class="btn">🛡️ Chống Văng Game</button>
+  <button class="btn">🛑 Chống Ban Acc</button>
+  <button class="btn">🎮 Tăng Độ Nhạy</button>
+  <button class="btn">👑 Chế Độ Pro</button>
+  <button class="btn">🧹 Auto Xóa Cache</button>
+  <button class="btn">⚙️ Cấu Hình Chuẩn</button>
+  <button class="btn">📦 Full Gói Tool</button>
+  <button class="btn">🔁 Bật Tắt Nhanh</button>
+  <button class="btn">🚀 Làm Mượt Max Setting</button>
+
+  <div class="footer">
+    &copy; Mua File Tại Đây Thành Nam Sp | Zalo: <a href="https://zalo.me/84374626604" style="color:#888;">Liên hệ hỗ trợ TẠI ĐÂY!</a>
+  </div>
+</div>
+
+<script>
+  function checkPassword() {
+    const correctPassword = "tiktok:tnam.3011"; // ✅ Mật khẩu mới tại đây
+    const input = document.getElementById("password").value;
+    const error = document.getElementById("error");
+
+    if (input === correctPassword) {
+      document.getElementById("login").style.display = "none";
+      document.getElementById("menu").style.display = "block";
+    } else {
+      error.innerText = "❌ Sai mật khẩu, thử lại!";
+    }
+  }
+</script>
+
+</body>
+</html>
